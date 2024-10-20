@@ -1,24 +1,124 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sajith Jeewantha</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div
-      class="flex justify-center items-center w-full h-[100vh] bg-gradient-to-r from-violet-500 to-fuchsia-500"
-    >
-      <div class="p-5 shadow-md rounded-2xl text-center hover:scale-105 hover:duration-500 duration-500">
-        <div
-          class="text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 p-2"
-        >
-          <h1 class="text-7xl sm:text-9xl font-serif">Sajith Jeewantha</h1>
-        </div>
+<!--
+    Design created by: Sajith Jeewantha
+    Date: 2024-10-20
+    Version: 1.0
+    GitHub: https://github.com/sajith-jeewantha
+-->
 
-        <h2 class="text-1xl sm:text-4xl mt-3">Welcome to my GitHub Page</h2>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Portfolio | Sajith Jeewantha</title>
+    <!-- Meta Tags -->
+    <meta name="description"
+        content="Sajith Jeewantha's professional profile portfolio. Full Stack Software Engineer specializing in web, mobile, and desktop application development with a passion for innovation and emerging technologies.">
+    <meta name="keywords"
+        content="Sajith Jeewantha, Software Engineer, Full Stack Developer, Portfolio, Web Development, Java Developer, Mobile Development, Desktop Development">
+    <meta name="author" content="Sajith Jeewantha">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Profile Portfolio | Sajith Jeewantha">
+    <meta property="og:description"
+        content="Explore Sajith Jeewantha's professional portfolio as a Full Stack Software Engineer specializing in web, mobile, and desktop application development.">
+    <meta property="og:image"
+        content="https://media.licdn.com/dms/image/v2/D5603AQHi0EsXMdBfKQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726942744824?e=1735171200&v=beta&t=9YOLdHISfCqpv9Y32glPJUv4amtv22EuFoglVMbIpIk">
+    <meta property="og:url" content="https://sajith-jeewantha.github.io/welcome/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Profile Portfolio | Sajith Jeewantha">
+    <meta name="twitter:description"
+        content="Explore Sajith Jeewantha's professional portfolio as a Full Stack Software Engineer specializing in web, mobile, and desktop application development.">
+    <meta name="twitter:image"
+        content="https://media.licdn.com/dms/image/v2/D5603AQHi0EsXMdBfKQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726942744824?e=1735171200&v=beta&t=9YOLdHISfCqpv9Y32glPJUv4amtv22EuFoglVMbIpIk">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center min-h-screen">
+    <div
+        class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg lg:w-3/5 text-center font-serif lg:border-double lg:border-2 lg:border-red-500 dark:border-blue-500">
+        <div class="mb-6">
+            <img class="w-32 h-32 mx-auto rounded-full shadow-lg hover:scale-105 duration-500"
+                src="https://media.licdn.com/dms/image/v2/D5603AQHi0EsXMdBfKQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726942744824?e=1735171200&v=beta&t=9YOLdHISfCqpv9Y32glPJUv4amtv22EuFoglVMbIpIk"
+                alt="Profile Image">
+        </div>
+        <h1 class="text-2xl font-bold mb-2 dark:text-white">Sajith Jeewantha</h1>
+        <p class="text-gray-600 dark:text-gray-400 mb-4">Full Stack Software Engineer</p>
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2 dark:text-white">About Me</h2>
+            <p class="text-gray-700 dark:text-gray-300">As a Software Engineer, I have a specific interest in coding,
+                doing research and
+                development. I consider myself a technology enthusiast who likes developing new solutions. I work mainly
+                with the Java programming language and I like to develop new applications - whether they are for the
+                web, mobile, or desktop. I am ready to engage in projects where I can work with emerging technologies
+                and stimulate new innovative developments in the industry.</p>
+        </div>
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2 dark:text-white">Education</h2>
+            <p class="text-gray-700 dark:text-gray-300">Student at Java Institute for Advanced Technology</p>
+            <p class="text-gray-700 dark:text-gray-300">Bachelor of Engineering in Software Engineering - IIC University
+                of Technology</p>
+        </div>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://www.facebook.com/sajith.jeewantha.165/" target="_blank"
+                class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-600 hover:scale-105 duration-500">
+                <svg class="w-6 h-6 " fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M22.675 0H1.325C.594 0 0 .593 0 1.326v21.348C0 23.407.594 24 1.325 24h11.495v-9.294H9.692V11.5h3.128V8.411c0-3.1 1.893-4.787 4.658-4.787 1.325 0 2.462.099 2.793.143v3.24l-1.917.001c-1.504 0-1.794.715-1.794 1.762v2.31h3.587l-.467 3.207h-3.12V24h6.105C23.406 24 24 23.407 24 22.674V1.326C24 .593 23.406 0 22.675 0z" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/sajithjeewantha_2050" target="_blank"
+                class="text-pink-600 dark:text-pink-400 hover:text-pink-800 dark:hover:text-pink-600 hover:scale-105 duration-500">
+                <svg class="w-6 h-6 hover:scale-105" version="1.1" viewBox="0 0 128 128" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="_x37__stroke">
+                        <g id="Instagram_1_">
+                            <rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
+                            <radialGradient cx="19.1111" cy="128.4444" gradientUnits="userSpaceOnUse" id="Instagram_2_"
+                                r="163.5519">
+                                <stop offset="0" style="stop-color:#FFB140" />
+                                <stop offset="0.2559" style="stop-color:#FF5445" />
+                                <stop offset="0.599" style="stop-color:#FC2B82" />
+                                <stop offset="1" style="stop-color:#8E40B7" />
+                            </radialGradient>
+                            <path clip-rule="evenodd"
+                                d="M105.843,29.837    c0,4.242-3.439,7.68-7.68,7.68c-4.241,0-7.68-3.438-7.68-7.68c0-4.242,3.439-7.68,7.68-7.68    C102.405,22.157,105.843,25.595,105.843,29.837z M64,85.333c-11.782,0-21.333-9.551-21.333-21.333    c0-11.782,9.551-21.333,21.333-21.333c11.782,0,21.333,9.551,21.333,21.333C85.333,75.782,75.782,85.333,64,85.333z M64,31.135    c-18.151,0-32.865,14.714-32.865,32.865c0,18.151,14.714,32.865,32.865,32.865c18.151,0,32.865-14.714,32.865-32.865    C96.865,45.849,82.151,31.135,64,31.135z M64,11.532c17.089,0,19.113,0.065,25.861,0.373c6.24,0.285,9.629,1.327,11.884,2.204    c2.987,1.161,5.119,2.548,7.359,4.788c2.24,2.239,3.627,4.371,4.788,7.359c0.876,2.255,1.919,5.644,2.204,11.884    c0.308,6.749,0.373,8.773,0.373,25.862c0,17.089-0.065,19.113-0.373,25.861c-0.285,6.24-1.327,9.629-2.204,11.884    c-1.161,2.987-2.548,5.119-4.788,7.359c-2.239,2.24-4.371,3.627-7.359,4.788c-2.255,0.876-5.644,1.919-11.884,2.204    c-6.748,0.308-8.772,0.373-25.861,0.373c-17.09,0-19.114-0.065-25.862-0.373c-6.24-0.285-9.629-1.327-11.884-2.204    c-2.987-1.161-5.119-2.548-7.359-4.788c-2.239-2.239-3.627-4.371-4.788-7.359c-0.876-2.255-1.919-5.644-2.204-11.884    c-0.308-6.749-0.373-8.773-0.373-25.861c0-17.089,0.065-19.113,0.373-25.862c0.285-6.24,1.327-9.629,2.204-11.884    c1.161-2.987,2.548-5.119,4.788-7.359c2.239-2.24,4.371-3.627,7.359-4.788c2.255-0.876,5.644-1.919,11.884-2.204    C44.887,11.597,46.911,11.532,64,11.532z M64,0C46.619,0,44.439,0.074,37.613,0.385C30.801,0.696,26.148,1.778,22.078,3.36    c-4.209,1.635-7.778,3.824-11.336,7.382C7.184,14.3,4.995,17.869,3.36,22.078c-1.582,4.071-2.664,8.723-2.975,15.535    C0.074,44.439,0,46.619,0,64c0,17.381,0.074,19.561,0.385,26.387c0.311,6.812,1.393,11.464,2.975,15.535    c1.635,4.209,3.824,7.778,7.382,11.336c3.558,3.558,7.127,5.746,11.336,7.382c4.071,1.582,8.723,2.664,15.535,2.975    C44.439,127.926,46.619,128,64,128c17.381,0,19.561-0.074,26.387-0.385c6.812-0.311,11.464-1.393,15.535-2.975    c4.209-1.636,7.778-3.824,11.336-7.382c3.558-3.558,5.746-7.127,7.382-11.336c1.582-4.071,2.664-8.723,2.975-15.535    C127.926,83.561,128,81.381,128,64c0-17.381-0.074-19.561-0.385-26.387c-0.311-6.812-1.393-11.464-2.975-15.535    c-1.636-4.209-3.824-7.778-7.382-11.336c-3.558-3.558-7.127-5.746-11.336-7.382c-4.071-1.582-8.723-2.664-15.535-2.975    C83.561,0.074,81.381,0,64,0z"
+                                fill="url(#Instagram_2_)" fill-rule="evenodd" id="Instagram" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://github.com/sajith-jeewantha" target="_blank"
+                class="text-gray-900 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105 duration-500">
+
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.11.82-.258.82-.577v-2.022c-3.338.727-4.043-1.415-4.043-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.73.084-.73 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.494.996.108-.776.418-1.304.76-1.605-2.665-.305-5.466-1.332-5.466-5.933 0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.522.116-3.176 0 0 1.01-.324 3.3 1.23.96-.267 1.988-.4 3.01-.404 1.02.004 2.05.137 3.01.404 2.29-1.554 3.3-1.23 3.3-1.23.652 1.654.24 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.625-5.475 5.92.43.371.813 1.104.813 2.223v3.293c0 .322.22.694.825.576C20.565 21.8 24 17.302 24 12 24 5.373 18.627 0 12 0z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sajith-jeewantha-76bb90254" target="_blank"
+                class="text-blue-700 dark:text-blue-500 hover:text-blue-900 dark:hover:text-blue-300 hover:scale-105 duration-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M22.23 0H1.77C.79 0 0 .774 0 1.73v20.54C0 23.226.79 24 1.77 24h20.46C23.21 24 24 23.226 24 22.27V1.73C24 .774 23.21 0 22.23 0zM7.12 20.452H3.539V9h3.582v11.452zm-1.79-13.16c-1.145 0-2.073-.933-2.073-2.078a2.078 2.078 0 012.073-2.078c1.145 0 2.078.933 2.078 2.078s-.933 2.078-2.078 2.078zM20.452 20.452h-3.58V15.08c0-1.28-.46-2.154-1.61-2.154-.878 0-1.398.59-1.625 1.164-.084.2-.104.48-.104.76v5.603h-3.581V9h3.581v1.57c.48-.748 1.337-1.81 3.253-1.81 2.378 0 4.166 1.56 4.166 4.908v7.785z" />
+                </svg>
+            </a>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
